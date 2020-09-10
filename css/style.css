@@ -5,7 +5,9 @@
 }
 
 body, html{
+  
     height: 100%;
+    
 }
 .container{
     max-width: 400px;
@@ -185,6 +187,41 @@ vermelho{
 }
 .up{
     font-size: 25px;
+}
+.aviso{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 1400px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 5px 5px 3px 3px;
+    z-index: 999999;
+    display: none;
+}
+.aviso h2{
+    line-height: 300px;
+    text-align: center;
+    font-family: Montserrat;
+}
+.aviso h3{
+    position: absolute;
+    right: 0;
+    font-family: Montserrat;
+    margin: 1% 1%;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    opacity: 0.8;
 }
 @media screen and (max-width: 1300px){
     .habilidades-texto{
