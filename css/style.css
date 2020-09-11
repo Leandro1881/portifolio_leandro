@@ -245,8 +245,11 @@ vermelho{
         font-size: 100%;
     }
     .section-texto h2, .section-texto p{
-        text-align: center;
+        text-align: justify;
         font-size: 15px;
+    }
+    .menu{
+        font-size: 12px;
     }
 }
 
