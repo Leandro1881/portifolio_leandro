@@ -30,7 +30,7 @@ body, html{
     background-color: white;
     border-radius: 50%;
     margin: 0 auto;
-    background-image: url('img/img-perfil.jpeg');
+    background-image: url('/img/img-perfil.jpeg');
     background-position: top;
     background-repeat: no-repeat;
     border: 2px solid rgba(250, 250, 250, 0.4);
