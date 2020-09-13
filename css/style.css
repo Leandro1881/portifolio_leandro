@@ -201,12 +201,12 @@ vermelho{
 .aviso h2{
     line-height: 300px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 .aviso h3{
     position: absolute;
     right: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     margin: 1% 1%;
     cursor: pointer;
 }
