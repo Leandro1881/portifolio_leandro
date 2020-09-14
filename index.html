@@ -3,8 +3,8 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name = "description" content = "Exemplo de descrição para o meu site.">
@@ -13,14 +13,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/comandos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Meu portifólio</title>
 </head>
-<body>
+<body ng-app="meuApp">
      <div class="flex"> 
      <section class="left w30">
         <div class="container"> 
             <div class="teste">
-            <div class="border-img"></div><!-- border-img -->
+            <img src="img/img-perf.png" alt="" class="border-img"><!-- border-img -->
              
             <div class="menu">
                 <ul>
@@ -29,7 +30,7 @@
                     <a href="habilidades.html"><li>Habilidades</li></a>
                     <a href="contato.html"><li>Contato</li></a>
                  
-                    <button>Download CV</button>
+               
 
                 
                 </ul>
@@ -37,7 +38,7 @@
         </div>
         </div><!-- container -->
      </section><!-- left w30 -->
-
+     <ng-view></ng-view>
      <section class="right w100">
          <div class="container2"> 
              <div class="teste2"> 
@@ -45,6 +46,7 @@
                 <h2>Seja muito bem-vindo(a) ao meu <vermelho>portifólio!</vermelho></h2>
                 <p>Meu nome é Leandro, tenho 18 anos, estou cursando sistemas de informação na USP (Universidade de São Paulo) e me encontro no segundo semestre. Por ter um vasto interesse pela área de tecnologia, tenho o costume de explorar diversas
                     linguagens de programação e obter uma base forte naquilo que julgo interessante e importante. </p>
+                <p>Confira alguns aspectos positivos:</p>
             </div><!-- section-texto -->
             <div class="habilidades">
                 <div class="container3">
@@ -55,19 +57,18 @@
                         </div>
 
                         <div class="habilidades-texto">
-                            <img src="img/lampada.png" alt="">
-                            <h2>Criatividade</h2>
+                            <img src="img/people.png" alt="">
+                            <h2>Multitarefado</h2>
                         </div>
 
                         <div class="habilidades-texto">
-                            <img src="img/lampada.png" alt="">
-                            <h2>Criatividade</h2>
+                            <img src="img/furniture.png" alt="">
+                            <h2>Dedicação</h2>
                         </div>
                          
                         <div class="habilidades-texto">
-                            <img src="img/lampada.png" alt="">
-                             
-                            <h2>Criatividade</h2>
+                            <img src="img/process.png" alt="">
+                            <h2>Autenticidade</h2>
                         </div>
 
                      
@@ -89,4 +90,9 @@
     </div><!-- aviso -->
     <div class="overlay"></div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script>
+ 
+    </script>
 </html>
