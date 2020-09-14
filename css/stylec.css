@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ .container5{
+     max-width: 150%;
+     margin: 0 auto;
+     text-align: center;
+     padding: 10px 2%;
+ }
+ .container5 h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+ }
+.flex-contatos{
+    display: flex;
+    padding: 20px 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-contatos img{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.flex-contatos-wrapper{
+    flex: 0 1 150px;
+    padding: 20px 2%;
+}
+.flex-contatos img:hover{
+    transform: scale(1.3);
+}
+
+ 
