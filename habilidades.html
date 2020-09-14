@@ -4,14 +4,17 @@
     <link rel="stylesheet" href="css/styleh.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name = "description" content = "Exemplo de descrição para o meu site.">
     <meta name = "keywords" content="palavras-chaves,separadas,por,vírgula">
 	<meta name = "author" content="Leandro Baccarin Costa">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Meu portifólio</title>
 </head>
 <body>
@@ -19,14 +22,13 @@
      <section class="left w30">
         <div class="container"> 
             <div class="teste">
-            <div class="border-img"></div><!-- border-img -->
+                <img src="img/img-perf.png" alt="" class="border-img"><!-- border-img -->
             <div class="menu">
                 <ul>
                     <a href="index.html"><li>Sobre mim</li></a>
                     <a href="habilidades.html"><li class="up">Habilidades</li></a>
                     <div style="height: 1px; width: 100%; background-color: #fff; color: #fff;"></div>
                     <a href="contato.html"><li>Contato</li></a>
-                    <button>Download CV</button>
                 </ul>
             </div><!-- menu -->
         </div>
@@ -61,10 +63,15 @@
                         <img style="width: 120px;" src="img/reacts.png" alt="">
                         <h2>REACT JS</h2>
                     </div>
+                    <div class="conhecimentos">
+                        <img style="width: 100px; height: 100px;" src="img/java.png" alt="">
+                        <h2>JAVA</h2>
+                    </div>
+
             </div><!-- flex2 -->
         </div><!-- container2 -->
      </section><!-- right w100 -->
     </div> <!-- flex -->
 </body>
-</html>
 
+</html>
