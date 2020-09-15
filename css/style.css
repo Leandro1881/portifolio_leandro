@@ -1,94 +1,295 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name = "description" content = "Exemplo de descrição para o meu site.">
-    <meta name = "keywords" content="palavras-chaves,separadas,por,vírgula">
-	<meta name = "author" content="Leandro Baccarin Costa">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/comandos.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Meu portifólio</title>
-</head>
-<body ng-app="meuApp">
-     <div class="flex"> 
-     <section class="left w30">
-        <div class="container"> 
-            <div class="teste">
-            <img src="img/img-perf.png" alt="" class="border-img"><!-- border-img -->
-             
-            <div class="menu">
-                <ul>
-                    <a href="index.html"><li class="up">Sobre mim</li></a>
-                    <div style="height: 1px; width: 100%; background-color: #fff; color: #fff;"></div>
-                    <a href="habilidades.html"><li>Habilidades</li></a>
-                    <a href="contato.html"><li>Contato</li></a>
-                 
-               
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-                
-                </ul>
-            </div><!-- menu -->
-        </div>
-        </div><!-- container -->
-     </section><!-- left w30 -->
-     <ng-view></ng-view>
-     <section class="right w100">
-         <div class="container2"> 
-             <div class="teste2"> 
-            <div class="section-texto">
-                <h2>Seja muito bem-vindo(a) ao meu <vermelho>portifólio!</vermelho></h2>
-                <p>Meu nome é Leandro, tenho 18 anos, estou cursando sistemas de informação na USP (Universidade de São Paulo) e me encontro no segundo semestre. Por ter um vasto interesse pela área de tecnologia, tenho o costume de explorar diversas
-                    linguagens de programação e obter uma base forte naquilo que julgo interessante e importante. </p>
-                <p>Confira alguns aspectos positivos:</p>
-            </div><!-- section-texto -->
-            <div class="habilidades">
-                <div class="container3">
-                    <div class="habilidades-texto-wrapper">
-                        <div class="habilidades-texto">
-                            <img src="img/lampada.png" alt="">
-                            <h2>Criatividade</h2>
-                        </div>
+body, html{
+    height: 100%;
+}
 
-                        <div class="habilidades-texto">
-                            <img src="img/people.png" alt="">
-                            <h2>Multitarefado</h2>
-                        </div>
+.container{
+    max-width: 400px;
+    margin: 50px auto;
+}
 
-                        <div class="habilidades-texto">
-                            <img src="img/furniture.png" alt="">
-                            <h2>Dedicação</h2>
-                        </div>
-                         
-                        <div class="habilidades-texto">
-                            <img style="z-index: 99999999;" src="img/research.png" alt="">
-                            <h2>Autenticidade</h2>
-                        </div>     
-                    </div><!-- habilidades-texto-wrapper -->
-                    <img src="img/img-usp.png" alt="" class="box-usp">
-                </div><!-- container3 -->
-            </div><!-- habilidades -->
-        </div>
-        </div><!-- container2 -->
-         
-     </section><!-- right w100 -->
-    </div> <!-- flex -->
-    <div class="aviso">
-        <h3>x</h3>
-        <h2>OBS: Em andamento.</h2>
-         
-    </div><!-- aviso -->
-    <div class="overlay"></div>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-<script>
+.flex{
+    display: flex;
+}
+
+.left{
+    background-color: #1a1a1a;
+    height: 100%;
+    position: fixed;
+    width: 30%;
+}
  
-    </script>
-</html>
+img.border-img{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    border: 2px solid rgba(250, 250, 250, 0.4);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.teste{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.menu{
+    margin:20px 15px;
+    text-align: center;
+    font-size: 100%;
+    color: #fff;
+    font-weight: 300;
+    width: 550px;
+ 
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu li{
+    padding: 10px 2%;
+    transition: 0.3s;
+    width: 100%;
+}
+.menu li:hover{
+     background-color: rgb(75, 75, 75);
+}
+.menu ul a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    color: #fff;
+    border-radius: 40px;
+    margin-top: 30px;
+    height: 80px;
+    width: 70%;
+    margin: 30px auto;
+    background-color: black;
+    line-height: 75px;
+    font-family: Poppins;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(red, green, blue);
+    cursor: pointer;
+}
+
+
+
+
+.right{
+    position:absolute;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(37, 39, 64);
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+.container2{
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 100px 0;
+}
+
+.section-texto{
+    padding: 0 2%;
+    display: none;
+}
+.section-texto h2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+vermelho{
+    color: rgb(117, 0, 0);
+}
+.section-texto p{
+    font-family: Poppins;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.habilidades{
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+    min-height: 200px;
+    background-color: rgb(252, 52, 100);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.teste2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 40px;
+    width: 100%;
+}
+.container3{
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 30px 2%;
+}
+.habilidades-texto-wrapper{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.habilidades-texto{
+    width: 25%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.habilidades-texto img{
+    width: 60px;
+    height: 60px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.habilidades-texto h2{
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.box-usp{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-image: url(/img/img-usp.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(250, 250, 250, 0.9);
+    bottom: 10px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.up{
+    font-size: 25px;
+}
+.aviso{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 1400px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 5px 5px 3px 3px;
+    z-index: 999999;
+    display: none;
+}
+.aviso h2{
+    line-height: 300px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.aviso h3{
+    position: absolute;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1% 1%;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    opacity: 0.8;
+}
+@media screen and (max-width: 1300px){
+    .habilidades-texto{
+        width: 50%;
+    }
+    .teste2{
+        top: 400px;
+    }
+}
+@media screen and (max-width: 1029px){
+    .teste2{
+        top: 400px;
+    }
+}
+@media screen and (max-width: 758px){
+    .habilidades-texto{
+        width: 100%;
+    }
+    .teste2{
+        position: relative;
+    }
+}
+@media screen and (max-width: 813px){
+    .teste2{
+        top: 450px;
+    }
+    .up{
+        font-size: 100%;
+    }
+    .section-texto h2, .section-texto p{
+        text-align: left;
+        font-size: 15px;
+    }
+    .menu{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 914px){
+    .teste2{
+        top: 500px;
+    }
+    .habilidades-texto h2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px){
+    .teste2{
+        top: 450px;
+    }
+}
+@media screen and (max-width: 450px){
+    .teste2{
+        top: 550px;
+    }
+}
+@media screen and (max-width: 330px){
+    .teste2{
+        top: 700px;
+    }
+}
+@media screen and (max-height: 531px){
+    img.border-img{
+        width: 16vw;
+        height: 16vw;
+    }
+}
+
+
+ 
+
+
