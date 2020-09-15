@@ -4,4 +4,5 @@ $(function(){
         $('.aviso').fadeOut();
     })
     $('.aviso').fadeIn();
+     $('.section-texto').fadeIn(300);
 })
